@@ -2,8 +2,9 @@
 import java.util.Scanner;
 
 public class somaFunc {
+    static Scanner leitor = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner leitor = new Scanner(System.in);
         double n1 = valores("Informe o primeiro valor:");
         double n2 = valores("Informe o segundo valor: ");
         double funcao = soma(n1, n2);
@@ -11,14 +12,12 @@ public class somaFunc {
     }
 
     public static double valores(String msg){
-        Scanner leitor = new Scanner(System.in);
         System.out.println(msg);
         return leitor.nextDouble();
 
     }
 
     public static double soma(double n1, double n2){
-        Scanner leitor = new Scanner(System.in);
         double soma = n1 + n2;
         return soma;
     }

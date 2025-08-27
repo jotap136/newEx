@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 public class semanaFunc {
-    Scanner leitor = new Scanner(System.in);
+    static Scanner leitor = new Scanner(System.in);
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         String week = Semana();
@@ -10,13 +10,11 @@ public class semanaFunc {
     }
 
     public static String dia (String msg){
-        Scanner leitor = new Scanner(System.in);
         System.out.println(msg);
         return leitor.nextLine();
     }
 
     public static String Semana(){
-        Scanner leitor = new Scanner(System.in);
         System.out.println("Informe o dia da semana:");
         String msg;
         int dia = leitor.nextInt();

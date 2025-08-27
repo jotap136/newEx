@@ -2,8 +2,9 @@
 import java.util.Scanner;
 
 public class mediafunc {
+    static Scanner leitor = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner leitor = new Scanner(System.in);
         double n1 = notas();
         double mediaa = media(n1);
 
@@ -12,7 +13,6 @@ public class mediafunc {
     }
 
     public static double notas(){
-        Scanner leitor = new Scanner(System.in);
         double Allnotas = 0;
         for(int i = 1; i < 4; i++){
             System.out.println("Informe a " + i + "° nota: ");

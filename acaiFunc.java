@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class acaiFunc {
+    static Scanner leitor = new Scanner(System.in);
+
     public static void main(String[] args) {
         int qtdP = pequeno();
         int qtdM = medio();
@@ -9,21 +11,18 @@ public class acaiFunc {
         System.out.println("O total a pagar é: " + somaaaa);
     }
     public static int pequeno(){
-        Scanner leitor = new Scanner(System.in);
         System.out.println("Informe quantos açais pequenos você deseja: ");
         int qtd = leitor.nextInt();
         return qtd;
     }
 
     public static int medio(){
-        Scanner leitor = new Scanner(System.in);
         System.out.println("Informe quantos açais medio você deseja: ");
         int qtd = leitor.nextInt();
         return qtd;
     }
 
     public static int grande(){
-        Scanner leitor = new Scanner(System.in);
         System.out.println("Informe quantos açais grande você deseja: ");
         int qtd = leitor.nextInt();
         return qtd;

@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 public class dobroFunc {
-    Scanner leitor = new Scanner(System.in);
+    static Scanner leitor = new Scanner(System.in);
     public static void main(String[] args) {
     double n1 = numero();
     double dobroo = dobro(n1);
@@ -10,7 +10,6 @@ public class dobroFunc {
     }
 
     public static double numero(){
-        Scanner leitor = new Scanner(System.in);
 
         System.out.println("Informe um número para ver o seu valor: ");
         double numero = leitor.nextDouble();
@@ -18,7 +17,6 @@ public class dobroFunc {
     }
 
     public static double dobro(double n1){
-        Scanner leitor = new Scanner(System.in);
         double somar = n1 * 2;
         return somar;
     }
