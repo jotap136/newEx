@@ -9,7 +9,7 @@ public class filaFunc {
         
         double[] alturas = preencherAlturas(quantidadeAlunos);
         
-        ordenarEExibirFila(alturas);
+        ExibirFila(alturas);
     }
     
     public static int obterNumeroInteiro(String mensagem) {
@@ -27,7 +27,7 @@ public class filaFunc {
         return alturas;
     }
 
-    public static void ordenarEExibirFila(double[] alturas) {
+    public static void ExibirFila(double[] alturas) {
         Arrays.sort(alturas);
         
         System.out.println("\nFila indiana:");
