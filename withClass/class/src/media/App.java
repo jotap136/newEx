@@ -7,6 +7,6 @@ public class App {
 
     public static void main(String[] args) {
         notas notas = new notas();
-        
+        System.out.println();
     }
 }
